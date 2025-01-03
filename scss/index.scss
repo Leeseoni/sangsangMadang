@@ -1,3 +1,4 @@
-.test {
-  display: block;
-}
+@use "./base/" as *;
+@use "./layout/" as *;
+@use "./component/" as *;
+// @use "./abstracts/" as *;

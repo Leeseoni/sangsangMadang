@@ -1,0 +1,5 @@
+@use "./ir" as *;
+
+.visually_hidden {
+  @include visually_hidden;
+}
