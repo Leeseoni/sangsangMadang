@@ -29,6 +29,20 @@ body {
 
 .header {
   width: 160rem;
+  margin: 10rem auto auto;
+}
+
+.utility {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: 2rem;
+  background: #000;
+}
+.utility > div {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  width: 160rem;
   margin-inline: auto;
 }
 
@@ -61,6 +75,46 @@ body {
 }
 .familysite li:nth-child(5):hover {
   color: silver;
+}
+
+.btn_archive {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.4rem;
+}
+.btn_archive::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url(/images/ico_archive.svg) no-repeat center/contain;
+}
+.utility .btn_archive::before {
+  background: url(/images/ico_archive_white.svg) no-repeat center/contain;
+}
+.utility .btn_archive {
+  color: #fff;
+}
+
+.btn_calendar {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.4rem;
+}
+.btn_calendar::before {
+  content: "";
+  width: 2rem;
+  aspect-ratio: 1;
+  background: url(/images/ico_calendar.svg) no-repeat center/contain;
+}
+.utility .btn_calendar::before {
+  background: url(/images/ico_calendar_white.svg) no-repeat center/contain;
+}
+.utility .btn_calendar {
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

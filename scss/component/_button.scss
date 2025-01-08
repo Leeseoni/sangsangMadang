@@ -1,0 +1,38 @@
+.btn_archive {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  &::before {
+    content: "";
+    width: 2rem;
+    aspect-ratio: 1;
+    background: url(/images/ico_archive.svg) no-repeat center / contain;
+    .utility & {
+      background: url(/images/ico_archive_white.svg) no-repeat center / contain;
+    }
+  }
+  .utility & {
+    color: #fff;
+  }
+}
+.btn_calendar {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  &::before {
+    content: "";
+    width: 2rem;
+    aspect-ratio: 1;
+    background: url(/images/ico_calendar.svg) no-repeat center / contain;
+    .utility & {
+      background: url(/images/ico_calendar_white.svg) no-repeat center / contain;
+    }
+  }
+  .utility & {
+    color: #fff;
+  }
+}

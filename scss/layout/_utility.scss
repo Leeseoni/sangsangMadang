@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.utility {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: 2rem;
+  background: #000;
+  > div {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+    width: $websize;
+    margin-inline: auto;
+  }
+}
