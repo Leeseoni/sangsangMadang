@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>상상마당</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <script type="module" src="/js/global.js"></script>
   </head>
   <body>
     <header class="header">
@@ -19,20 +20,29 @@
         <li><a href="/">Daechi</a></li>
         <li><a href="/">Busan</a></li>
       </ul>
+      <button class="btn-search" aria-label="검색"></button>
+
       <div class="utility">
         <div>
           <a href="" class="btn_archive">Archive</a>
           <a href="" class="btn_calendar">Calendar</a>
         </div>
       </div>
-      <ul>
-        <li><a>상상마당</a></li>
-        <li><a>프로그램</a></li>
-        <li><a>숙박.대관</a></li>
-        <li><a>F&B</a></li>
-        <li><a>디자인스퀘어</a></li>
-        <li><a>소식.공지</a></li>
-      </ul>
     </header>
+    <dialog class="search">
+      <form>
+        <input type="search" name="" id="" />
+        <button class="btn-search" aria-label="검색"></button>
+      </form>
+      <button class="btn-close" aria-label="닫기"></button>
+    </dialog>
+    <!-- <ul>
+      <li><a>상상마당</a></li>
+      <li><a>프로그램</a></li>
+      <li><a>숙박.대관</a></li>
+      <li><a>F&B</a></li>
+      <li><a>디자인스퀘어</a></li>
+      <li><a>소식.공지</a></li>
+    </ul> -->
   </body>
 </html>

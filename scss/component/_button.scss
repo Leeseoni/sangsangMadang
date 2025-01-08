@@ -40,4 +40,20 @@
   width: 4rem;
   aspect-ratio: 1;
   background: url(/images/ico_search.svg) no-repeat center / contain;
+  .header & {
+    // grid-column: 2/3;
+    // grid-row: 1/3;
+    align-self: center;
+  }
+}
+
+.btn-close {
+  width: 3rem;
+  aspect-ratio: 1;
+  background: url(/images/ico_close.svg) no-repeat center / contain;
+  .search & {
+    position: absolute;
+    top: -2rem;
+    right: 1rem;
+  }
 }
