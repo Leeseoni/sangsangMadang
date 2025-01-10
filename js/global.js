@@ -1,3 +1,3 @@
 import { Search } from "./ui/Search.js";
 
-Search();
+Search("resultPage.html");

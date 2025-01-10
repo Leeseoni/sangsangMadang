@@ -40,10 +40,14 @@ body {
 }
 
 .header {
+  position: relative;
+}
+.header .h-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
   width: 160rem;
-  margin: 10rem auto auto;
+  margin-inline: auto;
+  padding-top: 10rem;
 }
 
 .utility {
@@ -92,6 +96,60 @@ body {
 }
 .familysite li:nth-child(5):hover {
   color: silver;
+}
+
+.gnb {
+  display: flex;
+}
+.gnb > li {
+  position: relative;
+}
+.gnb > li > a {
+  display: block;
+  padding-inline: 4rem;
+}
+.gnb > li > a span {
+  display: block;
+  padding-block: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(#000, #000) no-repeat bottom center/0 0.4rem;
+  transition: 0.5s;
+}
+.gnb > li:has(a:focus) span {
+  background-size: 100% 0.4rem;
+}
+.gnb > li:hover span {
+  background-size: 100% 0.4rem;
+}
+.gnb > li .depth {
+  display: grid;
+  grid-template-rows: 0fr;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.gnb > li .depth ul {
+  overflow: hidden;
+}
+.gnb > li .depth a {
+  font-size: 1.8rem;
+  color: #aaa;
+  line-height: 2;
+}
+.gnb > li .depth a:hover {
+  color: #000;
+}
+.gnb:has(a:focus) .depth {
+  grid-template-rows: 1fr;
+  padding-top: 1.5rem;
+}
+.gnb:hover .depth {
+  grid-template-rows: 1fr;
+  padding-top: 1.5rem;
+}
+
+.header::after {
+  content: "";
 }
 
 .btn_archive {
